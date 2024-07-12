@@ -5,9 +5,9 @@
 		public static void Main(string[] args)
 		{
 			TaskManager taskManager = new();
+			taskManager.CreateTask("Read Quran", "Surah Yasin", DateTime.Now);
 			var tasks = taskManager.GetTasks();
 			
-			taskManager.CreateTask("Read Quran", "Surah Yasin", DateTime.Now);
 		}
 	}
 
